@@ -20,7 +20,7 @@ jobs:
             java-version: '21'
       - name: gérérer le livrable
         run: |
-          ls -al target
+          ls -al
           ./mvnw clean package spring-boot:repackage -Dmaven.test.skip=true
           ls -al target
 
